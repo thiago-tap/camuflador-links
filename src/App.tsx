@@ -26,8 +26,8 @@ function App() {
     setIsLoading(true);
 
     try {
-      // Endpoint de produção na Cloudflare
-      const API_URL = import.meta.env.VITE_API_URL || 'https://camuflador-links.thiagotap.workers.dev';
+      // Endpoint de produção no domínio customitizado
+      const API_URL = import.meta.env.VITE_API_URL || 'https://camuflador.catiteo.com';
       
       const res = await fetch(`${API_URL}/api/links`, {
         method: 'POST',
