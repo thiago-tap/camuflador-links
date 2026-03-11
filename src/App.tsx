@@ -26,8 +26,8 @@ function App() {
     setIsLoading(true);
 
     try {
-      // Em produção (na Cloudflare), coloque a URL real do Worker
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8787';
+      // Endpoint de produção na Cloudflare
+      const API_URL = import.meta.env.VITE_API_URL || 'https://camuflador-links.thiagotap.workers.dev';
       
       const res = await fetch(`${API_URL}/api/links`, {
         method: 'POST',
