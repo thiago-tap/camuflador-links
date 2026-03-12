@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Camuflador Pro. A melhor ferramenta para afiliados camuflarem seus links e instalarem Pixels de rastreio em segundos." />
-    <meta property="og:title" content="Camuflador Pro | Ocultador de Links para Afiliados" />
-    <meta property="og:description" content="A melhor ferramenta de camuflagem de links e redirecionamento inteligente para maximizar as conversões." />
-    <title>Camuflador Pro | Redirecionamento e Rastreio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#6366f1" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="canonical" href="https://camuflador.catiteo.com/" />
+    
+    <meta name="description" content="Camuflador Pro: A ferramenta definitiva para afiliados. Proteja seus links, oculte o destino real e instale Pixels do Facebook/Google em segundos para rastreio absoluto." />
+    <meta name="keywords" content="camuflador de links, ocultador de links, rastreio de afiliados, pixel facebook, pixel google, redirecionamento profissional" />
+    <meta name="author" content="Thiago Tap" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://camuflador.catiteo.com/" />
+    <meta property="og:title" content="Camuflador Pro | Redirecionamento Inteligente para Afiliados" />
+    <meta property="og:description" content="Maximize suas conversões com camuflagem de links profissional e rastreio de Pixel integrado." />
+    <meta property="og:image" content="https://camuflador.catiteo.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://camuflador.catiteo.com/" />
+    <meta property="twitter:title" content="Camuflador Pro | Redirecionamento Inteligente" />
+    <meta property="twitter:description" content="Proteja seus links e domine seus rastreios com nossa IA de redirecionamento." />
+    <meta property="twitter:image" content="https://camuflador.catiteo.com/og-image.png" />
+
+    <title>Camuflador Pro | Ocultador de Links e Rastreador de Pixels</title>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
